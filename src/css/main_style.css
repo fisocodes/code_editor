@@ -1,0 +1,157 @@
+.border-pane {
+  -fx-background-color: #17202A;
+  -fx-padding: 10;
+}
+
+.menu-bar {
+  -fx-background-color: #17202A;
+}
+.menu-bar .menu:hover, .menu-bar .menu:showing {
+  -fx-background-color: #9B59B6;
+}
+.menu-bar .menu:pressed {
+  -fx-background-color: #884EA0;
+}
+.menu-bar .menu .label {
+  -fx-text-fill: #F4ECF7;
+}
+.menu-bar .menu .context-menu {
+  -fx-background-color: #212F3D;
+}
+.menu-bar .menu .context-menu .menu-item:hover, .menu-bar .menu .context-menu .menu-item:focused {
+  -fx-background-color: #9B59B6;
+}
+.menu-bar .menu .context-menu .menu-item:pressed {
+  -fx-background-color: #884EA0;
+}
+.menu-bar .menu .context-menu .menu-item SVGPath {
+  -fx-fill: #F4ECF7;
+}
+
+.text-area {
+  -fx-background-color: transparent;
+  -fx-text-fill: #F4ECF7;
+  -fx-highlight-fill: #9B59B6;
+  -fx-highlight-text-fill: #17202A;
+}
+.text-area .scroll-pane .viewport {
+  -fx-background-color: transparent;
+}
+.text-area .scroll-pane .viewport .content {
+  -fx-background-color: #212F3D;
+  -fx-background-radius: 5;
+}
+
+.scroll-pane {
+  -fx-background-color: #212F3D;
+}
+.scroll-pane .scroll-bar .track {
+  -fx-background-color: #212F3D;
+}
+.scroll-pane .scroll-bar .thumb {
+  -fx-background-color: transparent;
+}
+.scroll-pane .scroll-bar:hover .thumb, .scroll-pane .scroll-bar:pressed .thumb {
+  -fx-background-color: #9B59B6;
+}
+.scroll-pane .scroll-bar .decrement-button, .scroll-pane .scroll-bar .increment-button {
+  -fx-background-color: #212F3D;
+  -fx-background-insets: 0;
+}
+.scroll-pane .scroll-bar .decrement-button:pressed, .scroll-pane .scroll-bar .increment-button:pressed {
+  -fx-background-color: #9B59B6;
+}
+.scroll-pane .scroll-bar .decrement-button .increment-arrow, .scroll-pane .scroll-bar .increment-button .increment-arrow {
+  -fx-background-color: #F4ECF7;
+}
+.scroll-pane .scroll-bar .decrement-button .decrement-arrow, .scroll-pane .scroll-bar .increment-button .decrement-arrow {
+  -fx-background-color: #F4ECF7;
+}
+.scroll-pane .corner {
+  -fx-background-color: transparent;
+}
+
+.tab-pane {
+  -fx-background-color: transparent;
+}
+.tab-pane .tab-header-area {
+  -fx-background-color: transparent;
+}
+.tab-pane .tab-header-background {
+  -fx-background-color: transparent;
+}
+.tab-pane .tab {
+  -fx-background-color: #17202A;
+  -fx-focus-color: #9B59B6;
+}
+.tab-pane .tab:selected {
+  -fx-background-color: #212F3D;
+}
+.tab-pane .tab:focused {
+  -fx-background-color: #9B59B6;
+}
+.tab-pane .tab .tab-label {
+  -fx-text-fill: #F4ECF7;
+}
+.tab-pane .tab .tab-close-button {
+  -fx-background-color: #F4ECF7;
+}
+.tab-pane .tab .unsaved-dot {
+  -fx-fill: #9B59B6;
+  -fx-scale-x: 0.75;
+  -fx-scale-y: 0.75;
+}
+
+.button, .access-button {
+  -fx-background-color: #17202A;
+  -fx-border-color: #F4ECF7;
+  -fx-text-fill: #F4ECF7;
+}
+.button SVGPath, .access-button SVGPath {
+  -fx-fill: #F4ECF7;
+}
+.button:hover, .access-button:hover {
+  -fx-background-color: #9B59B6;
+  -fx-border-color: #9B59B6;
+  -fx-effect: dropshadow(gaussian, #17202A, 10, 0.1, 0, 0);
+}
+.button:pressed, .access-button:pressed {
+  -fx-background-color: #884EA0;
+}
+
+.access-button {
+  -fx-padding: 50;
+  -fx-border-width: 3;
+  -fx-border-color: #212F3D;
+  -fx-border-radius: 15;
+  -fx-border-style: dashed;
+  -fx-background-radius: 15;
+}
+.access-button SVGPath {
+  -fx-fill: #212F3D;
+  -fx-scale-x: 4;
+  -fx-scale-y: 4;
+}
+.access-button:hover SVGPath {
+  -fx-fill: #F4ECF7;
+}
+
+.console-container .viewport {
+  -fx-background-color: #212F3D;
+}
+.console-container .viewport .console {
+  -fx-background-color: #212F3D;
+}
+.console-container .viewport .console .label {
+  -fx-text-fill: #F4ECF7;
+}
+.console-container .viewport .console .success-message {
+  -fx-text-fill: #239B56;
+}
+.console-container .viewport .console .error-message {
+  -fx-text-fill: #E74C3C;
+}
+
+.label {
+  -fx-text-fill: #F4ECF7;
+}/*# sourceMappingURL=main_style.css.map */

@@ -1,0 +1,42 @@
+@use '_color_scheme';
+
+.button, .access-button{
+    -fx-background-color: color_scheme.$background_color;
+    -fx-border-color: color_scheme.$foreground_color;
+    -fx-text-fill: color_scheme.$foreground_color;
+
+    SVGPath{
+        -fx-fill: color_scheme.$foreground_color;
+    }
+
+    &:hover{
+        -fx-background-color: color_scheme.$primary_color;
+        -fx-border-color: color_scheme.$primary_color;
+        -fx-effect: dropshadow(gaussian, #17202A, 10, 0.1, 0, 0);
+    }
+
+    &:pressed{
+        -fx-background-color: color_scheme.$primary_color_dark;
+    }
+}
+
+.access-button{
+    -fx-padding: 50;
+    -fx-border-width: 3;
+    -fx-border-color: color_scheme.$background_light_color;
+    -fx-border-radius: 15;
+    -fx-border-style: dashed;
+    -fx-background-radius: 15;
+
+    SVGPath{
+        -fx-fill: color_scheme.$background_light_color;
+        -fx-scale-x: 4;
+        -fx-scale-y: 4;
+    }
+
+    &:hover{
+        SVGPath{
+            -fx-fill: color_scheme.$foreground_color;
+        }
+    }
+}

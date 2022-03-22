@@ -1,0 +1,6 @@
+@use '_color_scheme';
+
+.border-pane{
+    -fx-background-color: color_scheme.$background_color;
+    -fx-padding: 10;
+}

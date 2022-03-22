@@ -1,0 +1,26 @@
+@use '_color_scheme';
+
+.console-container{
+    
+    .viewport{
+        -fx-background-color: color_scheme.$background_light_color;
+
+        .console{
+            -fx-background-color: color_scheme.$background_light_color;
+
+            .label{
+                -fx-text-fill: color_scheme.$foreground_color;
+            }
+
+            .success-message{
+                -fx-text-fill: color_scheme.$success_color;
+            }
+
+            .error-message{
+                -fx-text-fill: color_scheme.$error_color;
+            }
+        }
+    }
+
+
+}

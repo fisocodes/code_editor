@@ -1,0 +1,21 @@
+@use '_color_scheme';
+
+.text-area{
+
+    -fx-background-color: transparent;
+    -fx-text-fill: color_scheme.$foreground_color;
+    -fx-highlight-fill: color_scheme.$primary_color;
+    -fx-highlight-text-fill: color_scheme.$background_color;
+
+    .scroll-pane{
+
+        .viewport{
+            -fx-background-color: transparent;
+            .content{
+                -fx-background-color: color_scheme.$background_light_color;
+                -fx-background-radius: 5;
+            }
+        }
+
+    }
+}

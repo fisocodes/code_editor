@@ -1,0 +1,41 @@
+@use '_color_scheme';
+
+.tab-pane{
+    -fx-background-color: transparent;
+
+    .tab-header-area{
+        -fx-background-color: transparent;
+    }
+
+    .tab-header-background{
+        -fx-background-color: transparent;
+    }
+
+    .tab{
+        -fx-background-color: color_scheme.$background_color;
+        -fx-focus-color: color_scheme.$primary_color;
+
+        &:selected{
+            -fx-background-color: color_scheme.$background_light_color;
+        }
+
+        &:focused{
+            -fx-background-color: color_scheme.$primary_color;
+        }
+
+
+        .tab-label{
+            -fx-text-fill: color_scheme.$foreground_color;
+        }
+
+        .tab-close-button{
+            -fx-background-color: color_scheme.$foreground_color;
+        }
+
+        .unsaved-dot{
+            -fx-fill: color_scheme.$primary_color;
+            -fx-scale-x: 0.75;
+            -fx-scale-y: 0.75;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+@use '_color_scheme';
+
+.scroll-pane{
+
+    -fx-background-color: color_scheme.$background_light_color;
+
+    .scroll-bar{
+
+        .track{
+            -fx-background-color: color_scheme.$background_light_color;
+        }
+
+        .thumb{
+            -fx-background-color: transparent;
+        }
+
+        &:hover .thumb, &:pressed .thumb{
+            -fx-background-color: color_scheme.$primary_color;
+        }
+
+        .decrement-button, .increment-button{
+            -fx-background-color: color_scheme.$background_light_color;
+            -fx-background-insets: 0;
+
+            &:pressed{
+                -fx-background-color: color_scheme.$primary_color;
+            }
+
+            .increment-arrow{
+                -fx-background-color: color_scheme.$foreground_color;
+            }
+
+            .decrement-arrow{
+                -fx-background-color: color_scheme.$foreground_color;
+            }
+        }
+    }
+
+    .corner{
+        -fx-background-color: transparent;
+    }
+}

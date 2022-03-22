@@ -1,0 +1,39 @@
+@use '_color_scheme';
+
+.menu-bar{
+    -fx-background-color: color_scheme.$background_color;
+
+    .menu{
+
+        &:hover, &:showing{
+            -fx-background-color: color_scheme.$primary_color;
+        }
+
+        &:pressed{
+            -fx-background-color: color_scheme.$primary_color_dark;
+        }
+
+        .label{
+            -fx-text-fill: color_scheme.$foreground_color;
+        }
+
+        .context-menu{
+            -fx-background-color: color_scheme.$background_light_color;
+
+            .menu-item{
+
+                &:hover, &:focused{
+                    -fx-background-color: color_scheme.$primary_color;
+                }
+
+                &:pressed{
+                    -fx-background-color: color_scheme.$primary_color_dark;
+                }
+
+                SVGPath{
+                    -fx-fill: color_scheme.$foreground_color;
+                }
+            }
+        }
+    }
+}

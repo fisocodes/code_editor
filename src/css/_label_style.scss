@@ -1,0 +1,5 @@
+@use '_color_scheme';
+
+.label{
+    -fx-text-fill: color_scheme.$foreground_color;
+}
